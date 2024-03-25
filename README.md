@@ -1,4 +1,4 @@
-# openai-chat-tokens
+# `@coderabbitai/openai-chat-tokens`
 
 [![npm version](https://badge.fury.io/js/openai-chat-tokens.svg)](https://badge.fury.io/js/openai-chat-tokens)
 [![CI](https://github.com/hmarr/openai-chat-tokens/actions/workflows/ci.yml/badge.svg)](https://github.com/hmarr/openai-chat-tokens/actions/workflows/ci.yml)
@@ -16,26 +16,26 @@ This library handles both of those cases, as well as a minor adjustment needed f
 ## Usage
 
 ```typescript
-import { promptTokensEstimate } from "openai-chat-tokens";
+import { promptTokensEstimate } from "openai-chat-tokens"
 
 const estimate = promptTokensEstimate({
-  messages: [
-    { role: "system", content: "These aren't the droids you're looking for" },
-    { role: "user", content: "You can go about your business. Move along." },
-  ],
-  functions: [
-    {
-      name: "activate_hyperdrive",
-      description: "Activate the hyperdrive",
-      parameters: {
-        type: "object",
-        properties: {
-          destination: { type: "string" },
-        },
-      },
-    },
-  ],
-});
+	messages: [
+		{ role: "system", content: "These aren't the droids you're looking for" },
+		{ role: "user", content: "You can go about your business. Move along." },
+	],
+	functions: [
+		{
+			name: "activate_hyperdrive",
+			description: "Activate the hyperdrive",
+			parameters: {
+				type: "object",
+				properties: {
+					destination: { type: "string" },
+				},
+			},
+		},
+	],
+})
 ```
 
 ## Development and testing
@@ -43,8 +43,8 @@ const estimate = promptTokensEstimate({
 Built in TypeScript, tested with Vitest.
 
 ```sh
-npm install
-npm test
+pnpm install
+pnpm test
 ```
 
 When adding new test cases or debugging token count mismatches, it can be helpful to validate the estimated tokens in the tests against the live OpenAI API. To do this:
