@@ -1,7 +1,6 @@
 # `@coderabbitai/openai-chat-tokens`
 
-[![npm version](https://badge.fury.io/js/openai-chat-tokens.svg)](https://badge.fury.io/js/openai-chat-tokens)
-[![CI](https://github.com/hmarr/openai-chat-tokens/actions/workflows/ci.yml/badge.svg)](https://github.com/hmarr/openai-chat-tokens/actions/workflows/ci.yml)
+[![GitHub Pages](https://github.com/coderabbitai/openai-chat-tokens/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/coderabbitai/openai-chat-tokens/actions/workflows/github-pages.yaml) [![Node.js CI](https://github.com/coderabbitai/openai-chat-tokens/actions/workflows/node.js.yaml/badge.svg)](https://github.com/coderabbitai/openai-chat-tokens/actions/workflows/node.js.yaml) [![GitHub Downloads](https://img.shields.io/github/downloads/coderabbitai/openai-chat-tokens/total?logo=github)](https://github.com/coderabbitai/openai-chat-tokens/releases) [![NPM Downloads](https://img.shields.io/npm/dt/%40coderabbitai/openai-chat-tokens?logo=npm)](https://www.npmjs.com/package/@coderabbitai/openai-chat-tokens)
 
 A TypeScript / JavaScript library for estimating the number of tokens an OpenAI chat completion request will use.
 
