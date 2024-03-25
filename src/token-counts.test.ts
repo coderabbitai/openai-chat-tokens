@@ -3,7 +3,7 @@ import { loadEnv } from "vite"
 import { describe, test } from "vitest"
 import { promptTokensEstimate } from "./token-counts.js"
 
-const mode = process.env.NODE_ENV ?? "development"
+const mode = process.env["NODE_ENV"] ?? "development"
 Object.assign(process.env, loadEnv(mode, process.cwd(), ""))
 
 // There's a bug in the openai types that prevents us from adding the name field to the system message
@@ -632,12 +632,12 @@ describe.each(TEST_CASES)("token counts (%j)", example => {
 		"test data matches openai",
 		async ({ expect }) => {
 			const openai = new OpenAI()
+
 			const response = await openai.chat.completions.create({
+				...example,
 				model: "gpt-3.5-turbo",
-				messages: example.messages,
-				functions: example.functions,
-				function_call: example.function_call,
 				max_tokens: 10,
+				stream: false,
 			})
 
 			expect(response.usage?.prompt_tokens).toBe(example.tokens)
@@ -646,12 +646,7 @@ describe.each(TEST_CASES)("token counts (%j)", example => {
 	)
 
 	test("estimate is correct", ({ expect }) => {
-		const estimate = promptTokensEstimate({
-			messages: example.messages,
-			functions: example.functions,
-			function_call: example.function_call,
-		})
-
+		const estimate = promptTokensEstimate(example)
 		expect(estimate).toBe(example.tokens)
 	})
 })
