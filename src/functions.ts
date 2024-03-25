@@ -7,19 +7,19 @@ type OpenAIFunction = OpenAI.Chat.ChatCompletionCreateParams.Function
  * Record<string, unknown>, which isn't very useful for type checking this
  * formatting code. */
 export interface FunctionDef extends Omit<OpenAIFunction, "parameters"> {
-	name: string
-	description?: string
-	parameters: ObjectProp
+	readonly name: string
+	readonly description?: string
+	readonly parameters: ObjectProp
 }
 
 export interface ObjectProp {
-	type: "object"
-	properties?: Record<string, Prop>
-	required?: string[]
+	readonly type: "object"
+	readonly properties?: Record<string, Prop>
+	readonly required?: string[]
 }
 
 export interface AnyOfProp {
-	anyOf: Prop[]
+	readonly anyOf: Prop[]
 }
 
 export type Prop = {

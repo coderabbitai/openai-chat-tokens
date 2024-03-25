@@ -5,28 +5,29 @@ import type { FunctionDef } from "./functions.js"
 import { formatFunctionDefinitions } from "./functions.js"
 
 type Message = OpenAI.Chat.ChatCompletionMessageParam
-type Function = OpenAI.Chat.ChatCompletionCreateParams.Function
+type OpenAIFunction = OpenAI.Chat.ChatCompletionCreateParams.Function
 type FunctionCall = OpenAI.Chat.ChatCompletionFunctionCallOption
 
 let encoder: Tiktoken | undefined
 
+/** OpenAI prompt data */
+export interface Prompt {
+	/** OpenAI chat messages */
+	readonly messages: Message[]
+	readonly function_call?: FunctionCall | "auto" | "none"
+	/** OpenAI function definitions */
+	readonly functions?: OpenAIFunction[]
+}
+
 /**
- * Estimate the number of tokens a prompt will use.
- * @param prompt OpenAI prompt data
- * @param prompt.messages OpenAI chat messages
- * @param prompt.functions OpenAI function definitions
- * @returns An estimate for the number of tokens the prompt will use
+ * Estimates the number of tokens a prompt will use.
+ * @returns An estimate for the number of tokens the prompt will use.
  */
 export function promptTokensEstimate({
 	messages,
 	functions,
 	function_call,
-}: {
-	messages: Message[]
-	// eslint-disable-next-line @typescript-eslint/ban-types
-	functions?: Function[]
-	function_call?: FunctionCall | "auto" | "none"
-}): number {
+}: Prompt): number {
 	// It appears that if functions are present, the first system message is padded with a trailing newline. This
 	// was inferred by trying lots of combinations of messages and functions and seeing what the token counts were.
 	let paddedSystem = false

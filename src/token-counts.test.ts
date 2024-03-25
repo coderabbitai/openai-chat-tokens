@@ -1,7 +1,7 @@
 import OpenAI from "openai"
 import { loadEnv } from "vite"
 import { describe, test } from "vitest"
-import { promptTokensEstimate } from "./token-counts.js"
+import { promptTokensEstimate, type Prompt } from "./token-counts.js"
 
 const mode = process.env["NODE_ENV"] ?? "development"
 Object.assign(process.env, loadEnv(mode, process.cwd(), ""))
@@ -19,20 +19,13 @@ declare module "openai" {
 	}
 }
 
-type Message = OpenAI.Chat.ChatCompletionMessageParam
-type Function = OpenAI.Chat.ChatCompletionCreateParams.Function
-type FunctionCall = OpenAI.Chat.ChatCompletionFunctionCallOption
-interface Example {
-	messages: Message[]
-	// eslint-disable-next-line @typescript-eslint/ban-types
-	functions?: Function[]
-	function_call?: FunctionCall | "auto" | "none"
-	tokens: number
-	validate?: boolean
+interface Example extends Prompt {
+	readonly tokens: number
+	readonly validate?: boolean
 }
 
+/** These match <https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb>. */
 const TEST_CASES: Example[] = [
-	// these match https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb
 	{
 		messages: [
 			{
