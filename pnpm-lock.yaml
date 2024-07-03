@@ -23,7 +23,7 @@ importers:
         version: 9.1.0(eslint@9.6.0)
       openai:
         specifier: ^4.29.2
-        version: 4.52.2
+        version: 4.52.3
       prettier:
         specifier: ^3.1.0
         version: 3.3.2
@@ -38,7 +38,7 @@ importers:
         version: 7.15.0(eslint@9.6.0)(typescript@5.5.3)
       vite:
         specifier: ^5.2.6
-        version: 5.3.2(@types/node@18.19.39)
+        version: 5.3.3(@types/node@18.19.39)
       vitest:
         specifier: ^1.4.0
         version: 1.6.0(@types/node@18.19.39)
@@ -859,8 +859,8 @@ packages:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==}
     engines: {node: '>=12'}
 
-  openai@4.52.2:
-    resolution: {integrity: sha512-mMc0XgFuVSkcm0lRIi8zaw++otC82ZlfkCur1qguXYWPETr/+ZwL9A/vvp3YahX+shpaT6j03dwsmUyLAfmEfg==}
+  openai@4.52.3:
+    resolution: {integrity: sha512-IyQLYKGYoEEkUCEm2frPzwHDJ3Ym663KtivnY6pWCzuoi6/HgSIMMxpcuTRS81GH6tiULPYGmTxIvzXdmPIWOw==}
     hasBin: true
 
   optionator@0.9.4:
@@ -1088,8 +1088,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite@5.3.2:
-    resolution: {integrity: sha512-6lA7OBHBlXUxiJxbO5aAY2fsHHzDr1q7DvXYnyZycRs2Dz+dXBWuhpWHvmljTRTpQC2uvGmUFFkSHF2vGo90MA==}
+  vite@5.3.3:
+    resolution: {integrity: sha512-NPQdeCU0Dv2z5fu+ULotpuq5yfCS1BzKUIPhNbP3YBfAMGJXbt2nS+sbTFu+qchaqWTD+H3JK++nRwr6XIcp6A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1937,7 +1937,7 @@ snapshots:
     dependencies:
       mimic-fn: 4.0.0
 
-  openai@4.52.2:
+  openai@4.52.3:
     dependencies:
       '@types/node': 18.19.39
       '@types/node-fetch': 2.6.11
@@ -2153,7 +2153,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.3.2(@types/node@18.19.39)
+      vite: 5.3.3(@types/node@18.19.39)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2164,7 +2164,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.3.2(@types/node@18.19.39):
+  vite@5.3.3(@types/node@18.19.39):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.39
@@ -2192,7 +2192,7 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.3.2(@types/node@18.19.39)
+      vite: 5.3.3(@types/node@18.19.39)
       vite-node: 1.6.0(@types/node@18.19.39)
       why-is-node-running: 2.2.2
     optionalDependencies:
