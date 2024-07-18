@@ -56,7 +56,7 @@ export function isAnyOfProp(prop: Prop): prop is AnyOfProp {
 /** When OpenAI use functions in the prompt, they format them as TypeScript
  * definitions rather than OpenAPI JSON schemas. This function converts the JSON
  * schemas into TypeScript definitions. */
-export function formatFunctionDefinitions(functions: FunctionDef[]) {
+export function formatFunctionDefinitions(functions: FunctionDef[]): string {
 	const lines = ["namespace functions {", ""]
 	for (const f of functions) {
 		if (f.description) {

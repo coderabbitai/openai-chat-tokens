@@ -122,7 +122,7 @@ export function messageTokensEstimate(message: Message): number {
  * @param funcs An array of OpenAI function definitions
  * @returns An estimate for the number of tokens the function definitions will use
  */
-export function functionsTokensEstimate(funcs: FunctionDef[]) {
+export function functionsTokensEstimate(funcs: FunctionDef[]): number {
 	const promptDefinitions = formatFunctionDefinitions(funcs)
 	let tokens = stringTokens(promptDefinitions)
 	tokens += 9 // Add nine per completion
