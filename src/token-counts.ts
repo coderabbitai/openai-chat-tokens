@@ -28,13 +28,21 @@ export function promptTokensEstimate({
 	functions,
 	function_call,
 }: Prompt): number {
-	// It appears that if functions are present, the first system message is padded with a trailing newline. This
-	// was inferred by trying lots of combinations of messages and functions and seeing what the token counts were.
+	// It appears that if functions are present, the first system message is
+	// padded with a trailing newline. This was inferred by trying lots of
+	// combinations of messages and functions and seeing what the token counts
+	// were.
 	let paddedSystem = false
 	let tokens = messages
 		.map(m => {
 			if (m.role === "system" && functions && !paddedSystem) {
-				m = { ...m, content: m.content + "\n" }
+				m = {
+					...m,
+					content:
+						(Array.isArray(m.content)
+							? m.content.map(({ text }) => text).join("\n")
+							: m.content) + "\n",
+				}
 				paddedSystem = true
 			}
 			return messageTokensEstimate(m)
