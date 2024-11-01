@@ -1,7 +1,8 @@
 import OpenAI from "openai"
 import { loadEnv } from "vite"
 import { describe, test } from "vitest"
-import { promptTokensEstimate, type Prompt } from "./token-counts.js"
+import type { Prompt } from "./token-counts.ts"
+import { promptTokensEstimate } from "./token-counts.ts"
 
 const mode = process.env["NODE_ENV"] ?? "development"
 Object.assign(process.env, loadEnv(mode, process.cwd(), ""))

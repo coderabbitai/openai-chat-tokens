@@ -1,11 +1,11 @@
 import { describe, test } from "vitest"
-import type { FunctionDef, ObjectProp, Prop } from "./functions.js"
+import type { FunctionDef, ObjectProp, Prop } from "./functions.ts"
 import {
 	formatFunctionDefinitions,
 	formatObjectProperties,
 	formatType,
 	isAnyOfProp,
-} from "./functions.js"
+} from "./functions.ts"
 
 describe("isAnyOfProp", () => {
 	test("true", ({ expect }) => {

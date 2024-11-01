@@ -1,8 +1,8 @@
 import type { Tiktoken } from "js-tiktoken"
 import { getEncoding } from "js-tiktoken"
 import type OpenAI from "openai"
-import type { FunctionDef } from "./functions.js"
-import { formatFunctionDefinitions } from "./functions.js"
+import type { FunctionDef } from "./functions.ts"
+import { formatFunctionDefinitions } from "./functions.ts"
 
 type Message = OpenAI.Chat.ChatCompletionMessageParam
 type OpenAIFunction = OpenAI.Chat.ChatCompletionCreateParams.Function
