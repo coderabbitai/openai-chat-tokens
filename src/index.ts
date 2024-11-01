@@ -1,2 +1,2 @@
-export * from "./functions.js"
-export * from "./token-counts.js"
+export * from "./functions.ts"
+export * from "./token-counts.ts"
