@@ -10,7 +10,7 @@ importers:
     dependencies:
       js-tiktoken:
         specifier: ^1.0.14
-        version: 1.0.15
+        version: 1.0.16
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.1
@@ -23,7 +23,7 @@ importers:
         version: 9.1.0(eslint@9.9.1)
       openai:
         specifier: ^4.56.0
-        version: 4.69.0
+        version: 4.77.4
       prettier:
         specifier: ^3.3.3
         version: 3.4.2
@@ -38,10 +38,10 @@ importers:
         version: 8.2.0(eslint@9.9.1)(typescript@5.7.2)
       vite:
         specifier: ^5.4.2
-        version: 5.4.10(@types/node@18.19.63)
+        version: 5.4.10(@types/node@18.19.70)
       vitest:
         specifier: ^2.0.5
-        version: 2.1.6(@types/node@18.19.63)
+        version: 2.1.6(@types/node@18.19.70)
 
 packages:
 
@@ -346,11 +346,11 @@ packages:
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
-  '@types/node-fetch@2.6.11':
-    resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
+  '@types/node-fetch@2.6.12':
+    resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
-  '@types/node@18.19.63':
-    resolution: {integrity: sha512-hcUB7THvrGmaEcPcvUZCZtQ2Z3C+UR/aOcraBLCvTsFMh916Gc1kCCYcfcMuB76HM2pSerxl1PoP3KnmHzd9Lw==}
+  '@types/node@18.19.70':
+    resolution: {integrity: sha512-RE+K0+KZoEpDUbGGctnGdkrLFwi1eYKTlIHNl2Um98mUkGsm1u2Ff6Ltd0e8DktTtC98uy7rSj+hO8t/QuLoVQ==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -458,8 +458,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  agentkeepalive@4.5.0:
-    resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
+  agentkeepalive@4.6.0:
+    resolution: {integrity: sha512-kja8j7PjmncONqaTsB8fQ+wE2mSU2DJ9D4XKoJ5PFWIdRMa6SLSN1ff4mOr4jCbfRSsxR4keIiySJU0N9T5hIQ==}
     engines: {node: '>= 8.0.0'}
 
   ajv@6.12.6:
@@ -785,8 +785,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  js-tiktoken@1.0.15:
-    resolution: {integrity: sha512-65ruOWWXDEZHHbAo7EjOcNxOGasQKbL4Fq3jEr2xsCqSsoOo6VVSqzWQb6PRIqypFSDcma4jO90YP0w5X8qVXQ==}
+  js-tiktoken@1.0.16:
+    resolution: {integrity: sha512-nUVdO5k/M9llWpiaZlBBDdtmr6qWXwSD6fgaDu2zM8UP+OXxx9V37lFkI6w0/1IuaDx7WffZ37oYd9KvcWKElg==}
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -905,8 +905,8 @@ packages:
   oniguruma-to-js@0.4.3:
     resolution: {integrity: sha512-X0jWUcAlxORhOqqBREgPMgnshB7ZGYszBNspP+tS9hPD3l13CdaXcHbgImoHUHlrvGx/7AvFEkTRhAGYh+jzjQ==}
 
-  openai@4.69.0:
-    resolution: {integrity: sha512-S3hOHSkk609KqwgH+7dwFrSvO3Gm3Nk0YWGyPHNscoMH/Y2tH1qunMi7gtZnLbUv4/N1elqCp6bDior2401kCQ==}
+  openai@4.77.4:
+    resolution: {integrity: sha512-rShjKsZ/HXm1cSxXt6iFeZxiCohrVShawt0aRRQmbb+z/EXcH4OouyQZP1ShyZMb63LJajpl8aGw3DzEi8Wh9Q==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -1455,12 +1455,12 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node-fetch@2.6.11':
+  '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 18.19.63
+      '@types/node': 18.19.70
       form-data: 4.0.1
 
-  '@types/node@18.19.63':
+  '@types/node@18.19.70':
     dependencies:
       undici-types: 5.26.5
 
@@ -1556,13 +1556,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.6(vite@5.4.10(@types/node@18.19.63))':
+  '@vitest/mocker@2.1.6(vite@5.4.10(@types/node@18.19.70))':
     dependencies:
       '@vitest/spy': 2.1.6
       estree-walker: 3.0.3
       magic-string: 0.30.14
     optionalDependencies:
-      vite: 5.4.10(@types/node@18.19.63)
+      vite: 5.4.10(@types/node@18.19.70)
 
   '@vitest/pretty-format@2.1.6':
     dependencies:
@@ -1599,7 +1599,7 @@ snapshots:
 
   acorn@8.12.1: {}
 
-  agentkeepalive@4.5.0:
+  agentkeepalive@4.6.0:
     dependencies:
       humanize-ms: 1.2.1
 
@@ -1942,7 +1942,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  js-tiktoken@1.0.15:
+  js-tiktoken@1.0.16:
     dependencies:
       base64-js: 1.5.1
 
@@ -2062,12 +2062,12 @@ snapshots:
     dependencies:
       regex: 4.3.3
 
-  openai@4.69.0:
+  openai@4.77.4:
     dependencies:
-      '@types/node': 18.19.63
-      '@types/node-fetch': 2.6.11
+      '@types/node': 18.19.70
+      '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
-      agentkeepalive: 4.5.0
+      agentkeepalive: 4.6.0
       form-data-encoder: 1.7.2
       formdata-node: 4.4.1
       node-fetch: 2.7.0
@@ -2296,13 +2296,13 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite-node@2.1.6(@types/node@18.19.63):
+  vite-node@2.1.6(@types/node@18.19.70):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 5.4.10(@types/node@18.19.63)
+      vite: 5.4.10(@types/node@18.19.70)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2314,19 +2314,19 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.10(@types/node@18.19.63):
+  vite@5.4.10(@types/node@18.19.70):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.24.3
     optionalDependencies:
-      '@types/node': 18.19.63
+      '@types/node': 18.19.70
       fsevents: 2.3.3
 
-  vitest@2.1.6(@types/node@18.19.63):
+  vitest@2.1.6(@types/node@18.19.70):
     dependencies:
       '@vitest/expect': 2.1.6
-      '@vitest/mocker': 2.1.6(vite@5.4.10(@types/node@18.19.63))
+      '@vitest/mocker': 2.1.6(vite@5.4.10(@types/node@18.19.70))
       '@vitest/pretty-format': 2.1.6
       '@vitest/runner': 2.1.6
       '@vitest/snapshot': 2.1.6
@@ -2342,11 +2342,11 @@ snapshots:
       tinyexec: 0.3.1
       tinypool: 1.0.2
       tinyrainbow: 1.2.0
-      vite: 5.4.10(@types/node@18.19.63)
-      vite-node: 2.1.6(@types/node@18.19.63)
+      vite: 5.4.10(@types/node@18.19.70)
+      vite-node: 2.1.6(@types/node@18.19.70)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 18.19.63
+      '@types/node': 18.19.70
     transitivePeerDependencies:
       - less
       - lightningcss
