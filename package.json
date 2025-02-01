@@ -33,7 +33,7 @@
 		"typescript": "5.7.2",
 		"typescript-eslint": "^8.2.0",
 		"vite": "^6.0.7",
-		"vitest": "^2.0.5"
+		"vitest": "^3.0.4"
 	},
 	"dependencies": {
 		"js-tiktoken": "^1.0.14"
