@@ -15,7 +15,7 @@ This library handles both of those cases, as well as a minor adjustment needed f
 ## Usage
 
 ```typescript
-import { promptTokensEstimate } from "openai-chat-tokens"
+import { promptTokensEstimate } from "@coderabbitai/openai-chat-tokens"
 
 const estimate = promptTokensEstimate({
 	messages: [
