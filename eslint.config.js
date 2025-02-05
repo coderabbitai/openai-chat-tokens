@@ -9,7 +9,6 @@ export default tseslint.config(
 		},
 	},
 
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
 	eslint.configs.recommended,
 	...tseslint.configs.strictTypeChecked,
 	...tseslint.configs.stylisticTypeChecked,
@@ -54,6 +53,9 @@ export default tseslint.config(
 			"@typescript-eslint/sort-type-constituents": "error",
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 			"func-style": ["error", "declaration"],
+
+			// This package isn't updated for the newest `js-tiktoken` version.
+			"@typescript-eslint/no-deprecated": "warn",
 		},
 	},
 	{
