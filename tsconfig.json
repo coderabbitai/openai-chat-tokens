@@ -33,6 +33,7 @@
 		"isolatedModules": true,
 		"verbatimModuleSyntax": true,
 		"isolatedDeclarations": true,
+		"erasableSyntaxOnly": true,
 		"forceConsistentCasingInFileNames": true,
 
 		/* Type Checking */
